@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="javascripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html"> <div class="logotype"></div></a>
+      <a class="headerLink" href="about.html">О нас</a>
+      <a class="headerLink" href="news.html">Новости</a>
+      <a class="headerLink" href="shop.html">Магазин</a>
+      <a class="headerLink active" href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="contactsContent">
+      <nav class="contactsBreadcrumb">
+        <a href="index.html" class="breadcrumbLink">Главная</a>
+        <span class="breadcrumbSep"> / </span>
+        <span class="breadcrumbCurrent">Контакты</span>
+      </nav>
+      <div class="contactsMain">
+        <div class="contactsInfo">
+          <h1 class="contactsTitle">Контакты</h1>
+          <div class="contactsBlock">
+            <h2 class="contactsBlockTitle">Адрес</h2>
+            <p class="contactsBlockText">г. Москва, Веселая, 7</p>
+          </div>
+          <div class="contactsBlock">
+            <h2 class="contactsBlockTitle">Связаться с нами</h2>
+            <p class="contactsBlockText">+7 (000) 000-00-00</p>
+            <p class="contactsBlockText">svyazproject@yandex.ru</p>
+          </div>
+        </div>
+        <div class="contactsMap">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?text=Веселая%2C%207%2C%20Москва&z=16"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="applicationForm" id="applicationForm">
+      <div class="appFormCard">
+        <div class="appFormLeft">
+          <h2 class="appFormTitle">
+            Подайте заявку —<br />найдите своего человека
+          </h2>
+          <img src="images/Asset 7.svg" alt="" class="appFormDecorSkateboard" />
+          <img src="images/Asset 8.svg" alt="" class="appFormDecorCane" />
+        </div>
+        <form class="appFormFields" id="appForm" novalidate>
+          <input
+            type="text"
+            class="appFormInput"
+            id="fullName"
+            placeholder="Имя Фамилия"
+            autocomplete="name"
+          />
+          <input
+            type="tel"
+            class="appFormInput"
+            id="phone"
+            placeholder="+7 000 000-00-00"
+            autocomplete="tel"
+          />
+          <input
+            type="email"
+            class="appFormInput"
+            id="email"
+            placeholder="email@example.com"
+            autocomplete="email"
+          />
+          <div class="appFormDateRow">
+            <select class="appFormSelect" id="daySelect">
+              <option value="" disabled selected>День</option>
+            </select>
+            <select class="appFormSelect" id="monthSelect">
+              <option value="" disabled selected>Месяц</option>
+              <option value="1">Январь</option>
+              <option value="2">Февраль</option>
+              <option value="3">Март</option>
+              <option value="4">Апрель</option>
+              <option value="5">Май</option>
+              <option value="6">Июнь</option>
+              <option value="7">Июль</option>
+              <option value="8">Август</option>
+              <option value="9">Сентябрь</option>
+              <option value="10">Октябрь</option>
+              <option value="11">Ноябрь</option>
+              <option value="12">Декабрь</option>
+            </select>
+            <select class="appFormSelect" id="yearSelect">
+              <option value="" disabled selected>Год</option>
+            </select>
+          </div>
+          <button type="submit" class="appFormButton">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footerDivider"></div>
+      <div class="footerMain">
+        <a href="index.html" class="footerLogo"></a>
+        <nav class="footerNav">
+          <a href="about.html" class="footerNavLink">О нас</a>
+          <a href="news.html" class="footerNavLink">Новости</a>
+          <a href="404.html" class="footerNavLink">FAQ</a>
+          <a href="shop.html" class="footerNavLink">Магазин</a>
+          <a href="contacts.html" class="footerNavLink">Контакты</a>
+        </nav>
+        <div class="footerContacts">
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Адрес</p>
+            <p class="footerContactText">г. Москва, Веселая, 7</p>
+          </div>
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Контакты</p>
+            <div class="footerContactDetails">
+              <p class="footerContactText">+7 (000) 000-00-00</p>
+              <p class="footerContactText">svyazproject@yandex.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerDivider"></div>
+      <div class="footerSocial">
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-телеграм.svg"
+            alt="Telegram"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-vk-в-круге.svg"
+            alt="ВКонтакте"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+      <div class="footerDivider"></div>
+    </footer>
+  </body>
+</html>

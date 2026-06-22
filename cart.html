@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="javascripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html"> <div class="logotype"></div></a>
+      <a class="headerLink" href="about.html">О нас</a>
+      <a class="headerLink" href="news.html">Новости</a>
+      <a class="headerLink" href="shop.html">Магазин</a>
+      <a class="headerLink" href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="cartContent">
+      <nav class="contactsBreadcrumb">
+        <a href="index.html" class="breadcrumbLink">Главная</a>
+        <span class="breadcrumbSep"> / </span>
+        <a href="shop.html" class="breadcrumbLink">Магазин</a>
+        <span class="breadcrumbSep"> / </span>
+        <span class="breadcrumbCurrent">Корзина</span>
+      </nav>
+
+      <h1 class="cartTitle">Корзина</h1>
+
+      <div class="cartMain" id="cartMain" style="display:none">
+        <div class="cartItems" id="cartItems"></div>
+
+        <div class="cartSummary">
+          <h2 class="cartSummaryTitle">Итого</h2>
+          <div class="cartSummaryRows">
+            <div class="cartSummaryRow">
+              <span>Товары (<span id="cartCount">0</span>)</span>
+              <span id="cartSubtotal">0 ₽</span>
+            </div>
+            <div class="cartSummaryRow">
+              <span>Доставка</span>
+              <span>Бесплатно</span>
+            </div>
+          </div>
+          <div class="cartSummaryDivider"></div>
+          <div class="cartSummaryTotal">
+            <span>К оплате</span>
+            <span id="cartTotal">0 ₽</span>
+          </div>
+          <button class="cartCheckoutBtn">Оформить заказ</button>
+          <a href="shop.html" class="cartContinueLink">Продолжить покупки</a>
+        </div>
+      </div>
+
+      <div class="cartEmpty" id="cartEmpty">
+        <p class="cartEmptyText">Корзина пуста</p>
+        <a href="shop.html" class="cartEmptyBtn">Перейти в магазин</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footerDivider"></div>
+      <div class="footerMain">
+        <a href="index.html" class="footerLogo"></a>
+        <nav class="footerNav">
+          <a href="about.html" class="footerNavLink">О нас</a>
+          <a href="news.html" class="footerNavLink">Новости</a>
+          <a href="404.html" class="footerNavLink">FAQ</a>
+          <a href="shop.html" class="footerNavLink">Магазин</a>
+          <a href="contacts.html" class="footerNavLink">Контакты</a>
+        </nav>
+        <div class="footerContacts">
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Адрес</p>
+            <p class="footerContactText">г. Москва, Веселая, 7</p>
+          </div>
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Контакты</p>
+            <div class="footerContactDetails">
+              <p class="footerContactText">+7 (000) 000-00-00</p>
+              <p class="footerContactText">svyazproject@yandex.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerDivider"></div>
+      <div class="footerSocial">
+        <a href="404.html" class="footerSocialLink">
+          <img src="icons/icons8-телеграм.svg" alt="Telegram" width="40" height="40" />
+        </a>
+        <a href="404.html" class="footerSocialLink">
+          <img src="icons/icons8-vk-в-круге.svg" alt="ВКонтакте" width="40" height="40" />
+        </a>
+      </div>
+      <div class="footerDivider"></div>
+    </footer>
+  </body>
+</html>

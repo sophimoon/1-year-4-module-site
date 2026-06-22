@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="javascripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html"> <div class="logotype"></div></a>
+      <a class="headerLink" href="about.html">О нас</a>
+      <a class="headerLink" href="news.html">Новости</a>
+      <a class="headerLink active" href="shop.html">Магазин</a>
+      <a class="headerLink" href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="shopContent">
+      <nav class="contactsBreadcrumb">
+        <a href="index.html" class="breadcrumbLink">Главная</a>
+        <span class="breadcrumbSep"> / </span>
+        <span class="breadcrumbCurrent">Магазин</span>
+      </nav>
+      <div class="shopHeader">
+        <h1 class="shopTitle">Магазин</h1>
+        <button
+          class="shopCartBtn"
+          aria-label="Корзина"
+          onclick="location.href = 'cart.html'"
+        >
+          <img
+            src="icons/free-icon-shopping-cart-1014808.png"
+            alt="Корзина"
+            width="36"
+            height="36"
+          />
+        </button>
+      </div>
+      <div class="shopStage">
+        <button
+          class="shopArrow shopArrowLeft"
+          id="shopPrev"
+          aria-label="Предыдущая"
+        >
+          <img
+            src="icons/free-icon-chevron-down-17286296.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+        </button>
+        <button
+          class="shopArrow shopArrowRight"
+          id="shopNext"
+          aria-label="Следующая"
+        >
+          <img
+            src="icons/free-icon-chevron-down-17286296.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+        </button>
+        <div class="shopCardsContainer" id="shopCardsContainer">
+          <div class="shopCard" data-id="1" data-name="Книга" data-price="890">
+            <div class="shopCardImage"></div>
+            <div class="shopCardInfo">
+              <div class="shopCardTitleRow">
+                <p class="shopCardTitle">Плакат</p>
+                <p class="shopCardPrice">890 ₽</p>
+              </div>
+              <div class="shopCardButtons">
+                <button class="shopCardBuyBtn">Купить сейчас</button>
+                <button class="shopCardCartBtn">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shopCard" data-id="2" data-name="Книга" data-price="1190">
+            <div class="shopCardImage"></div>
+            <div class="shopCardInfo">
+              <div class="shopCardTitleRow">
+                <p class="shopCardTitle">Платок</p>
+                <p class="shopCardPrice">1 190 ₽</p>
+              </div>
+              <div class="shopCardButtons">
+                <button class="shopCardBuyBtn">Купить сейчас</button>
+                <button class="shopCardCartBtn">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shopCard" data-id="3" data-name="Книга" data-price="750">
+            <div class="shopCardImage"></div>
+            <div class="shopCardInfo">
+              <div class="shopCardTitleRow">
+                <p class="shopCardTitle">Плакат</p>
+                <p class="shopCardPrice">750 ₽</p>
+              </div>
+              <div class="shopCardButtons">
+                <button class="shopCardBuyBtn">Купить сейчас</button>
+                <button class="shopCardCartBtn">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shopCard" data-id="4" data-name="Книга" data-price="990">
+            <div class="shopCardImage"></div>
+            <div class="shopCardInfo">
+              <div class="shopCardTitleRow">
+                <p class="shopCardTitle">Плакат</p>
+                <p class="shopCardPrice">990 ₽</p>
+              </div>
+              <div class="shopCardButtons">
+                <button class="shopCardBuyBtn">Купить сейчас</button>
+                <button class="shopCardCartBtn">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shopCard" data-id="5" data-name="Книга" data-price="1490">
+            <div class="shopCardImage"></div>
+            <div class="shopCardInfo">
+              <div class="shopCardTitleRow">
+                <p class="shopCardTitle">Платок</p>
+                <p class="shopCardPrice">1 490 ₽</p>
+              </div>
+              <div class="shopCardButtons">
+                <button class="shopCardBuyBtn">Купить сейчас</button>
+                <button class="shopCardCartBtn">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footerDivider"></div>
+      <div class="footerMain">
+        <a href="index.html" class="footerLogo"></a>
+        <nav class="footerNav">
+          <a href="about.html" class="footerNavLink">О нас</a>
+          <a href="news.html" class="footerNavLink">Новости</a>
+          <a href="404.html" class="footerNavLink">FAQ</a>
+          <a href="shop.html" class="footerNavLink">Магазин</a>
+          <a href="contacts.html" class="footerNavLink">Контакты</a>
+        </nav>
+        <div class="footerContacts">
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Адрес</p>
+            <p class="footerContactText">г. Москва, Веселая, 7</p>
+          </div>
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Контакты</p>
+            <div class="footerContactDetails">
+              <p class="footerContactText">+7 (000) 000-00-00</p>
+              <p class="footerContactText">svyazproject@yandex.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerDivider"></div>
+      <div class="footerSocial">
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-телеграм.svg"
+            alt="Telegram"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-vk-в-круге.svg"
+            alt="ВКонтакте"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+      <div class="footerDivider"></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Социальный проект "Связь"</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="javascripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html"> <div class="logotype"></div></a>
+      <a class="headerLink" href="about.html">О нас</a>
+      <a class="headerLink" href="news.html">Новости</a>
+      <a class="headerLink" href="shop.html">Магазин</a>
+      <a class="headerLink" href="contacts.html">Контакты</a>
+    </nav>
+
+    <section class="hero">
+      <video class="heroBg" autoplay muted loop playsinline>
+        <source src="images/видео.mp4" type="video/mp4" />
+      </video>
+      <div class="heroContent">
+        <h1 class="heroTitle">Друзья сквозь поколения</h1>
+        <p class="heroSubtitle">
+          Соединяем поколения, у которых есть<br />что дать друг другу — но не
+          было<br />повода встретиться
+        </p>
+        <a href="#applicationForm" class="heroButton">Найти друга</a>
+      </div>
+    </section>
+
+    <div class="introduction">
+      <img
+        src="images/Asset 7.svg"
+        alt=""
+        class="introDecor introDecorSkateboard"
+      />
+      <img src="images/Asset 13.svg" alt="" class="introDecor introDecorYarn" />
+      <img
+        src="images/Asset 12.svg"
+        alt=""
+        class="introDecor introDecorGamepad"
+      />
+      <img src="images/Asset 8.svg" alt="" class="introDecor introDecorCane" />
+      <div class="introductionContent">
+        <p>
+          Мы являемся пока единственным проектом в России, который направлен на
+          создание персональных долгосрочных связей между людьми молодого и
+          пожилого возраста, а не разовые активности или помощь
+        </p>
+      </div>
+    </div>
+
+    <div class="howItWorks">
+      <h2 class="howItWorksTitle">А как это работает?</h2>
+      <div class="howItWorksSteps">
+        <div class="howItWorksStep">
+          <img
+            src="icons/free-icon-check-list-3300211.png"
+            alt="Заявка"
+            class="howItWorksIcon"
+          />
+          <p>Подайте заявку<br />на сайте</p>
+        </div>
+        <div class="howItWorksStep">
+          <img
+            src="icons/free-icon-chat-874655.png"
+            alt="Связь"
+            class="howItWorksIcon"
+          />
+          <p>Мы свяжимся с вами<br />и узнаем ваши интересы</p>
+        </div>
+        <div class="howItWorksStep">
+          <img
+            src="icons/free-icon-test-730418.png"
+            alt="Подбор"
+            class="howItWorksIcon"
+          />
+          <p>Подберем<br />подходящую пару</p>
+        </div>
+        <div class="howItWorksStep">
+          <img
+            src="icons/free-icon-calendar-8080635.png"
+            alt="Встреча"
+            class="howItWorksIcon"
+          />
+          <p>Согласуем<br />первую встречу</p>
+        </div>
+      </div>
+      <div class="howItWorksBanner">
+        <p>
+          В целях безопасности первая встреча проходит<br />совместно с
+          координатором
+        </p>
+      </div>
+    </div>
+
+    <div class="HaveFoundFriends">
+      <h2 class="haveFoundFriendsTitle">Уже нашли друзей</h2>
+      <div class="carouselWrapper">
+        <button class="carouselArrow carouselArrowLeft" id="prevBtn">
+          <img src="icons/free-icon-chevron-down-17286296.png" alt="Назад" />
+        </button>
+        <div class="carouselViewport">
+          <div class="carouselTrack" id="carouselTrack">
+            <div class="friendCard">
+              <img
+                src="images/Different Slavic woman 45-58.png"
+                alt="Татьяна"
+                class="friendCardPhoto"
+              />
+              <div class="friendCardText">
+                <h3 class="friendCardName">Татьяна, 58</h3>
+                <p class="friendCardDesc">
+                  После переезда детей Татьяне стало не хватать общения.<br />
+                  В проекте она познакомилась <br />с девушкой, с которой теперь
+                  гуляет и ходит в театр
+                </p>
+              </div>
+            </div>
+            <div class="friendCard">
+              <img
+                src="images/Young Slavic man portrait 1.png"
+                alt="Арсений"
+                class="friendCardPhoto"
+              />
+              <div class="friendCardText">
+                <h3 class="friendCardName">Арсений, 22</h3>
+                <p class="friendCardDesc">
+                  Арсений пришёл в проект <br />из интереса и познакомился<br />
+                  с Николаем. Теперь они часто встречаются и общаются
+                </p>
+              </div>
+            </div>
+            <div class="friendCard">
+              <img
+                src="images/Elder Slavic man 70.png"
+                alt="Николай"
+                class="friendCardPhoto"
+              />
+              <div class="friendCardText">
+                <h3 class="friendCardName">Николай, 70</h3>
+                <p class="friendCardDesc">
+                  После выхода на пенсию Николай чувствовал себя одиноко.
+                  Благодаря проекту он нашёл нового друга и снова стал чаще
+                  выходить из дома
+                </p>
+              </div>
+            </div>
+            <div class="friendCard">
+              <img
+                src="images/Different Slavic woman_ 58.png"
+                alt="Елена"
+                class="friendCardPhoto"
+              />
+              <div class="friendCardText">
+                <h3 class="friendCardName">Елена, 50</h3>
+                <p class="friendCardDesc">
+                  Елена давно хотела найти единомышленников. В проекте она
+                  познакомилась с молодым человеком, с которым они занимаются
+                  живописью
+                </p>
+              </div>
+            </div>
+            <div class="friendCard">
+              <img
+                src="images/Young Slavic man portrait 2.png"
+                alt="Дмитрий"
+                class="friendCardPhoto"
+              />
+              <div class="friendCardText">
+                <h3 class="friendCardName">Дмитрий, 25</h3>
+                <p class="friendCardDesc">
+                  Дмитрий хотел поделиться своим опытом с людьми старшего
+                  поколения. В проекте он нашёл наставника и близкого друга
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carouselArrow carouselArrowRight" id="nextBtn">
+          <img src="icons/free-icon-chevron-down-17286296.png" alt="Вперёд" />
+        </button>
+      </div>
+    </div>
+
+    <div class="Coordinators">
+      <h2 class="coordinatorsTitle">Координаторы проекта</h2>
+      <div class="coordinatorsCards">
+        <div class="coordinatorCard">
+          <img
+            src="images/Different woman_ 30.png"
+            alt="Кристина"
+            class="friendCardPhoto"
+          />
+          <div class="coordinatorCardText">
+            <h3 class="friendCardName">Кристина, 30</h3>
+            <p class="friendCardDesc">Помогает подобрать подходящую пару</p>
+          </div>
+        </div>
+        <div class="coordinatorCard">
+          <img
+            src="images/Man_ 26 _ Instagram style.png"
+            alt="Миша"
+            class="friendCardPhoto"
+          />
+          <div class="coordinatorCardText">
+            <h3 class="friendCardName">Миша, 26</h3>
+            <p class="friendCardDesc">
+              Развивает сообщество<br />
+              проекта
+            </p>
+          </div>
+        </div>
+        <div class="coordinatorCard">
+          <img
+            src="images/Woman_ 21 _ Instagram style.png"
+            alt="Маша"
+            class="friendCardPhoto"
+          />
+          <div class="coordinatorCardText">
+            <h3 class="friendCardName">Маша, 21</h3>
+            <p class="friendCardDesc">Организовывает встречи участников</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="faqTitle">Часто задаваемые вопросы</h2>
+      <div class="faqList">
+        <div class="faqItem">
+          <button class="faqQuestion">
+            <span>Что это за проект?</span>
+            <img
+              src="icons/free-icon-chevron-down-17286296.png"
+              alt=""
+              class="faqChevron"
+            />
+          </button>
+          <div class="faqAnswer">
+            <p>
+              «Связь» — социальный проект, который соединяет молодых людей и
+              людей старшего возраста для долгосрочной дружбы. Мы подбираем пары
+              по интересам и сопровождаем их на протяжении всего общения.
+            </p>
+          </div>
+          <div class="faqDivider"></div>
+        </div>
+
+        <div class="faqItem">
+          <button class="faqQuestion">
+            <span>Это волонтерство?</span>
+            <img
+              src="icons/free-icon-chevron-down-17286296.png"
+              alt=""
+              class="faqChevron"
+            />
+          </button>
+          <div class="faqAnswer">
+            <p>
+              Мы не называем это волонтерством, потому что общение
+              взаимовыгодно: обе стороны получают новые знакомства, опыт и
+              поддержку. Участие добровольное и бесплатное.
+            </p>
+          </div>
+          <div class="faqDivider"></div>
+        </div>
+
+        <div class="faqItem">
+          <button class="faqQuestion">
+            <span>Общение онлайн или вживую?</span>
+            <img
+              src="icons/free-icon-chevron-down-17286296.png"
+              alt=""
+              class="faqChevron"
+            />
+          </button>
+          <div class="faqAnswer">
+            <p>
+              Мы ориентируемся на живые встречи — прогулки, совместные занятия,
+              посещение мероприятий.
+            </p>
+          </div>
+          <div class="faqDivider"></div>
+        </div>
+
+        <div class="faqItem">
+          <button class="faqQuestion">
+            <span>Как подбираются пары?</span>
+            <img
+              src="icons/free-icon-chevron-down-17286296.png"
+              alt=""
+              class="faqChevron"
+            />
+          </button>
+          <div class="faqAnswer">
+            <p>
+              После подачи заявки координатор связывается с вами и узнаёт ваши
+              интересы, график и пожелания. На основе этого мы подбираем
+              подходящего человека вручную.
+            </p>
+          </div>
+          <div class="faqDivider"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="applicationForm" id="applicationForm">
+      <div class="appFormCard">
+        <div class="appFormLeft">
+          <h2 class="appFormTitle">
+            Подайте заявку —<br />найдите своего человека
+          </h2>
+          <img src="images/Asset 7.svg" alt="" class="appFormDecorSkateboard" />
+          <img src="images/Asset 8.svg" alt="" class="appFormDecorCane" />
+        </div>
+        <form class="appFormFields" id="appForm" novalidate>
+          <input
+            type="text"
+            class="appFormInput"
+            id="fullName"
+            placeholder="Имя Фамилия"
+            autocomplete="name"
+          />
+          <input
+            type="tel"
+            class="appFormInput"
+            id="phone"
+            placeholder="+7 000 000-00-00"
+            autocomplete="tel"
+          />
+          <input
+            type="email"
+            class="appFormInput"
+            id="email"
+            placeholder="email@example.com"
+            autocomplete="email"
+          />
+          <div class="appFormDateRow">
+            <select class="appFormSelect" id="daySelect">
+              <option value="" disabled selected>День</option>
+            </select>
+            <select class="appFormSelect" id="monthSelect">
+              <option value="" disabled selected>Месяц</option>
+              <option value="1">Январь</option>
+              <option value="2">Февраль</option>
+              <option value="3">Март</option>
+              <option value="4">Апрель</option>
+              <option value="5">Май</option>
+              <option value="6">Июнь</option>
+              <option value="7">Июль</option>
+              <option value="8">Август</option>
+              <option value="9">Сентябрь</option>
+              <option value="10">Октябрь</option>
+              <option value="11">Ноябрь</option>
+              <option value="12">Декабрь</option>
+            </select>
+            <select class="appFormSelect" id="yearSelect">
+              <option value="" disabled selected>Год</option>
+            </select>
+          </div>
+          <button type="submit" class="appFormButton">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footerDivider"></div>
+      <div class="footerMain">
+        <a href="index.html" class="footerLogo"></a>
+        <nav class="footerNav">
+          <a href="about.html" class="footerNavLink">О нас</a>
+          <a href="news.html" class="footerNavLink">Новости</a>
+          <a href="404.html" class="footerNavLink">FAQ</a>
+          <a href="shop.html" class="footerNavLink">Магазин</a>
+          <a href="contacts.html" class="footerNavLink">Контакты</a>
+        </nav>
+        <div class="footerContacts">
+          <div class="footerContactBlock">
+            <p class="footerAdressTitle">Адрес</p>
+            <p class="footerAdressText">
+              г. Москва, Веселая, 7
+            </p>
+          </div>
+          <div class="footerContactBlock">
+            <p class="footerContactTitle">Контакты</p>
+            <div class="footerContactDetails">
+              <p class="footerContactText">+7 (000) 000-00-00</p>
+              <p class="footerContactText">svyazproject@yandex.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerDivider"></div>
+      <div class="footerSocial">
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-телеграм.svg"
+            alt="Telegram"
+            width="40"
+            height="40"
+          />
+        </a>
+        <a href="404.html" class="footerSocialLink">
+          <img
+            src="icons/icons8-vk-в-круге.svg"
+            alt="ВКонтакте"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+      <div class="footerDivider"></div>
+    </footer>
+  </body>
+</html>
