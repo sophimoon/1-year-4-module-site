@@ -4,26 +4,35 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 if (track && prevBtn && nextBtn) {
-  const CARD_WIDTH = 333;
-  const GAP = 24;
-  const STEP = CARD_WIDTH + GAP;
   const TOTAL_CARDS = 5;
   const VISIBLE_CARDS = 3;
   let currentIndex = 0;
 
+  function getStep() {
+    const card = track.querySelector(".friendCard");
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return card.getBoundingClientRect().width + gap;
+  }
+
+  function updateTrack() {
+    track.style.transform = `translateX(-${currentIndex * getStep()}px)`;
+  }
+
   prevBtn.addEventListener("click", () => {
     if (currentIndex > 0) {
       currentIndex--;
-      track.style.transform = `translateX(-${currentIndex * STEP}px)`;
+      updateTrack();
     }
   });
 
   nextBtn.addEventListener("click", () => {
     if (currentIndex < TOTAL_CARDS - VISIBLE_CARDS) {
       currentIndex++;
-      track.style.transform = `translateX(-${currentIndex * STEP}px)`;
+      updateTrack();
     }
   });
+
+  window.addEventListener("resize", updateTrack);
 }
 
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
@@ -289,13 +298,14 @@ function saveCart(cart) {
     const id = card.dataset.id;
     const name = card.querySelector(".shopCardTitle").textContent.trim();
     const price = parseInt(card.dataset.price, 10);
+    const image = card.querySelector(".shopCardImage img")?.src || "";
 
     const cart = getCart();
     const existing = cart.find(function (item) { return item.id === id; });
     if (existing) {
       existing.qty++;
     } else {
-      cart.push({ id: id, name: name, price: price, qty: 1 });
+      cart.push({ id: id, name: name, price: price, qty: 1, image: image });
     }
     saveCart(cart);
 
@@ -345,6 +355,7 @@ function saveCart(cart) {
         name: item.querySelector(".cartItemName").textContent,
         price: parseInt(item.querySelector(".cartItemPrice").dataset.price, 10),
         qty: parseInt(item.querySelector(".cartQtyValue").textContent, 10),
+        image: item.querySelector(".cartItemImage img")?.src || "",
       });
     });
     saveCart(cart);
@@ -369,7 +380,7 @@ function saveCart(cart) {
       div.className = "cartItem";
       div.dataset.id = item.id;
       div.innerHTML =
-        '<div class="cartItemImage"></div>' +
+        '<div class="cartItemImage">' + (item.image ? '<img src="' + item.image + '" alt="' + item.name + '" />' : "") + '</div>' +
         '<div class="cartItemInfo">' +
           '<p class="cartItemName">' + item.name + "</p>" +
           '<p class="cartItemPrice" data-price="' + item.price + '">' + formatPrice(item.price) + "</p>" +

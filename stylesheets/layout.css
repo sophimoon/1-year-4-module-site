@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.3vw;
   color: #000000;
   background-color: #fff;
 }
@@ -21,9 +21,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 3.5vw;
   width: 100%;
-  padding: 2.014vw 2.014vw;
+  padding: 2vw 2vw;
   position: relative;
 }
 
@@ -32,19 +32,15 @@ body {
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  transition: color 0.2s;
-}
-
-.headerLink:hover {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .hero {
-  height: 670px;
+  height: 74.4vh;
+  min-height: 670px;
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 80px;
+  padding-left: 5.6vw;
   overflow: hidden;
 }
 
@@ -77,8 +73,8 @@ body {
 .heroContent {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  max-width: 400px;
+  gap: 0.9vh;
+  max-width: 27.8vw;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -86,12 +82,12 @@ body {
 
 .heroTitle {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3.3vw;
   line-height: 1.04;
 }
 
 .heroSubtitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -101,34 +97,29 @@ body {
   background-color: #f469bc;
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 300;
-  padding: 16px 36px;
-  border-radius: 36px;
+  padding: 1.8vh 2.5vw;
+  border-radius: 2.5vw;
   width: fit-content;
-  margin-top: 8px;
-  transition: background-color 0.2s;
-}
-
-.heroButton:hover {
-  background-color: #f78ecf;
+  margin-top: 0.9vh;
 }
 
 .header > a:first-child {
   position: absolute;
-  left: 42px;
+  left: 6.3vw;
 }
 
 .logotype {
-  width: 96px;
-  height: 42px;
-  background-color: grey;
+  width: 7vw;
+  height: 3vw;
 }
 
 .introduction {
   width: auto;
-  height: 740px;
-  font-size: 24px;
+  height: 82.2vh;
+  min-height: 740px;
+  font-size: 1.7vw;
   font-weight: 300;
   line-height: 1.25;
   display: flex;
@@ -145,59 +136,61 @@ body {
 }
 
 .introDecorSkateboard {
-  width: 240px;
-  top: 35px;
-  left: 160px;
+  width: 16.7vw;
+  top: 3.9vh;
+  left: 11.1vw;
   rotate: 17deg;
 }
 
 .introDecorYarn {
-  width: 220px;
-  top: 35px;
-  right: 160px;
+  width: 15.3vw;
+  top: 3.9vh;
+  right: 11.1vw;
   rotate: -30deg;
 }
 
 .introDecorGamepad {
-  width: 220px;
-  bottom: 140px;
-  left: 160px;
+  width: 15.3vw;
+  bottom: 15.6vh;
+  left: 11.1vw;
   rotate: 30deg;
 }
 
 .introDecorCane {
-  height: 320px;
-  bottom: 40px;
-  right: 260px;
+  height: 35.6vh;
+  bottom: 4.4vh;
+  right: 18.1vw;
   rotate: 50deg;
 }
 
 .introductionContent {
   display: flex;
   flex-direction: column;
-  max-width: 750px;
+  max-width: 52.1vw;
   text-align: center;
 }
 
 .howItWorks {
   width: auto;
-  height: 740px;
+  height: 82.2vh;
+  min-height: 740px;
   background-color: #fdf0e8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 7.1vh;
 }
 
 .howItWorksTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
 }
 
 .howItWorksSteps {
   display: flex;
-  gap: 96px;
+  flex-wrap: wrap;
+  gap: 6.1vw;
   justify-content: center;
 }
 
@@ -205,43 +198,45 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1.8vh;
   text-align: center;
-  max-width: 220px;
-  font-size: 18px;
+  max-width: 15.3vw;
+  font-size: 1.3vw;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .howItWorksIcon {
-  width: 96px;
-  height: 96px;
+  max-width: 6.7vw;
+  max-height: 10.7vh;
   object-fit: contain;
+  display: block;
 }
 
 .howItWorksBanner {
   background-color: #f5c83c;
-  border-radius: 24px;
-  padding: 32px 100px;
+  border-radius: 1.7vw;
+  padding: 3.6vh 6.9vw;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .HaveFoundFriends {
-  height: 750px;
+  height: 83.3vh;
+  min-height: 750px;
   background-color: #f4694a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 5.3vh;
   overflow: hidden;
 }
 
 .haveFoundFriendsTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #fff;
 }
@@ -249,55 +244,54 @@ body {
 .carouselWrapper {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 1.7vw;
 }
 
 .carouselViewport {
-  width: 1047px;
+  width: 73vw;
   overflow: hidden;
 }
 
 .carouselTrack {
   display: flex;
-  gap: 24px;
-  transition: transform 0.4s ease;
+  gap: 1.7vw;
 }
 
 .friendCard {
-  min-width: 333px;
-  height: 515px;
+  min-width: 23.1vw;
+  max-width: 23.1vw;
   background: #fff;
-  border-radius: 24px;
-  padding: 28px;
+  border-radius: 1.7vw;
+  padding: 3.1vh 1.9vw;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.8vh;
 }
 
 .friendCardPhoto {
-  width: 277px;
-  height: 277px;
+  width: 19.2vw;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1.1vw;
   flex-shrink: 0;
 }
 
 .friendCardText {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.9vh;
   align-items: center;
 }
 
 .friendCardName {
-  font-size: 36px;
+  font-size: 2.5vw;
   font-weight: 500;
   color: #000000;
   text-align: center;
 }
 
 .friendCardDesc {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #000000;
   line-height: 1.2;
@@ -315,8 +309,8 @@ body {
 }
 
 .carouselArrow img {
-  width: 32px;
-  height: 32px;
+  width: 2.2vw;
+  height: 3.6vh;
   filter: brightness(0) invert(1);
 }
 
@@ -329,66 +323,71 @@ body {
 }
 
 .Coordinators {
-  height: 750px;
+  height: 83.3vh;
+  min-height: 750px;
   background-color: #ffcf4a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 5.3vh;
 }
 
 .coordinatorsTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
 
 .coordinatorsCards {
   display: flex;
-  gap: 24px;
+  gap: 1.7vw;
 }
 
 .coordinatorCard {
-  width: 333px;
+  width: 23.1vw;
   height: auto;
   background: #fff;
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 1.7vw;
+  padding: 3.1vh 1.9vw;
+  box-shadow: 0 0.9vh 2.2vw rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.8vh;
 }
 
 .coordinatorCardText {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.9vh;
   text-align: center;
 }
 
 .faq {
-  padding: 80px 90px;
+  min-height: 750px;
+  padding: 8.9vh 6.3vw;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .faqTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 72px;
+  margin-bottom: 8vh;
 }
 
 .faqList {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1.8vh;
 }
 
 .faqItem {
-  width: 1048px;
+  width: 72.8vw;
 }
 
 .faqQuestion {
@@ -399,41 +398,33 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 24px 48px;
+  padding: 2.7vh 3.3vw;
   font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-size: 2.5vw;
   font-weight: 400;
   color: #000000;
   text-align: left;
 }
 
 .faqChevron {
-  width: 24px;
-  height: 24px;
+  width: 1.7vw;
+  height: 2.7vh;
   flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-
-.faqItem.open .faqChevron {
-  transform: rotate(180deg);
 }
 
 .faqAnswer {
   max-height: 0;
   overflow: hidden;
-  transition:
-    max-height 0.35s ease,
-    padding 0.35s ease;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   line-height: 1.2;
   color: #000000;
-  padding: 0 48px;
+  padding: 0 3.3vw;
 }
 
 .faqItem.open .faqAnswer {
-  max-height: 300px;
-  padding: 0 48px 24px;
+  max-height: 33.3vh;
+  padding: 0 3.3vw 2.7vh;
 }
 
 .faqDivider {
@@ -442,20 +433,21 @@ body {
 }
 
 .applicationForm {
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 8.9vh;
+  padding-bottom: 17.8vh;
   background-color: #fff;
 }
 
 .appFormCard {
-  width: 1260px;
-  height: 469px;
+  width: 87.5vw;
+  height: 52.1vh;
   background-color: #ffcf4a;
-  border-radius: 24px;
-  padding: 32px;
+  border-radius: 1.7vw;
+  padding: 3.6vh 2.2vw;
   display: flex;
   align-items: center;
 }
@@ -468,7 +460,7 @@ body {
 }
 
 .appFormTitle {
-  font-size: 36px;
+  font-size: 2.5vw;
   font-weight: 500;
   line-height: 1.2;
   color: #000000;
@@ -476,43 +468,40 @@ body {
 
 .appFormDecorSkateboard {
   position: absolute;
-  width: 215px;
-  bottom: 70px;
-  left: 80px;
+  width: 14.9vw;
+  bottom: 7.8vh;
+  left: 5.6vw;
   rotate: 30deg;
 }
 
 .appFormDecorCane {
   position: absolute;
-  height: 315px;
-  bottom: -10px;
-  left: 350px;
+  height: 35vh;
+  bottom: -1.1vh;
+  left: 24.3vw;
   rotate: 35deg;
 }
 
 .appFormFields {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 593px;
+  gap: 1.8vh;
+  width: 41.2vw;
   flex-shrink: 0;
 }
 
 .appFormInput {
   width: 100%;
-  height: 64px;
-  border-radius: 12px;
+  height: 7.1vh;
+  border-radius: 0.8vw;
   border: 2px solid transparent;
   background-color: #fff;
-  padding: 0 20px;
+  padding: 0 1.4vw;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #000000;
   outline: none;
-  transition:
-    border-color 0.2s,
-    background-color 0.2s;
 }
 
 .appFormInput::placeholder {
@@ -526,19 +515,19 @@ body {
 
 .appFormDateRow {
   display: flex;
-  gap: 16px;
+  gap: 1.1vw;
   width: 100%;
 }
 
 .appFormSelect {
   flex: 1;
-  height: 64px;
-  border-radius: 12px;
+  height: 7.1vh;
+  border-radius: 0.8vw;
   border: none;
   background-color: #fff;
-  padding: 0 16px;
+  padding: 0 1.1vw;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #b0b0b0;
   outline: none;
@@ -551,35 +540,30 @@ body {
 
 .appFormButton {
   width: 100%;
-  height: 80px;
-  border-radius: 24px;
+  height: 8.9vh;
+  border-radius: 1.7vw;
   border: none;
   background-color: #f469bc;
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 300;
   cursor: pointer;
-  margin-top: 8px;
-  transition: background-color 0.2s;
-}
-
-.appFormButton:hover {
-  background-color: #f78ecf;
+  margin-top: 0.9vh;
 }
 
 .footer {
-  height: 450px;
+  height: 50vh;
   background-color: #f4694a;
-  padding: 48px 90px 72px;
+  padding: 5.3vh 6.3vw 8vh;
   display: flex;
   flex-direction: column;
 }
 
 .footerDivider {
-  width: 731px;
+  width: 50.8vw;
   height: 0.5px;
-  margin-left: 529px;
+  margin-left: 36.7vw;
   background-color: #ffffff89;
   flex-shrink: 0;
 }
@@ -591,46 +575,39 @@ body {
 }
 
 .footerLogo {
-  width: 413px;
-  height: 211px;
-  background-color: #c0c0c0;
-  border-radius: 4px;
+  width: 26vw;
+  height: 22vh;
   flex-shrink: 0;
   display: block;
   align-self: flex-start;
 }
 
 .footerNav {
-  margin-left: 116px;
+  margin-left: 8.1vw;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.9vh;
 }
 
 .footerNavLink {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footerNavLink:hover {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footerContacts {
-  margin-left: 256px;
+  margin-left: 17.8vw;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 2vh;
 }
 
 .footerAdressTitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 0.9vh;
 }
 
 .footerAdressText {
@@ -640,14 +617,14 @@ body {
 }
 
 .footerContactTitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 1.8vh;
 }
 
 .footerContactText {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #fff;
 }
@@ -655,15 +632,15 @@ body {
 .footerContactDetails {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.9vh;
 }
 
 .footerSocial {
   display: flex;
-  gap: 8px;
+  gap: 0.6vw;
   align-items: center;
-  padding: 24px 0;
-  margin-left: 529px;
+  padding: 2.7vh 0;
+  margin-left: 36.7vw;
 }
 
 .footerSocialLink {
@@ -673,16 +650,17 @@ body {
 }
 
 .notFoundContent {
-  height: 700px;
+  height: 77.8vh;
+  min-height: 730px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 4.4vw;
 }
 
 .notFoundIllustration {
-  width: 760px;
-  height: 700px;
+  width: 52.8vw;
+  height: 77.8vh;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -694,33 +672,33 @@ body {
 }
 
 .notFoundCode {
-  font-size: 202px;
+  font-size: 14vw;
   font-weight: 700;
   line-height: 1;
   color: #000000;
-  letter-spacing: -1px;
+  letter-spacing: -0.1vw;
 }
 
 .notFoundTextGroup {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.9vh;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 2.7vh;
 }
 
 .notFoundTitle {
-  font-size: 36px;
+  font-size: 2.5vw;
   font-weight: 600;
   color: #000000;
 }
 
 .notFoundSubtitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #000000;
   line-height: 1.2;
-  max-width: 400px;
+  max-width: 27.8vw;
 }
 
 .notFoundButton {
@@ -728,42 +706,33 @@ body {
   background-color: #f469bc;
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 300;
-  padding: 16px 48px;
-  border-radius: 36px;
-  transition: background-color 0.2s;
-}
-
-.notFoundButton:hover {
-  background-color: #f78ecf;
+  padding: 1.8vh 3.3vw;
+  border-radius: 2.5vw;
 }
 
 .contactsContent {
-  height: 600px;
-  padding: 60px 90px 80px;
+  min-height: 500px;
+  height: 66.7vh;
+  padding: 6.7vh 6.3vw 8.9vh;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 7.1vh;
 }
 
 .contactsBreadcrumb {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #888;
-  gap: 8px;
+  gap: 0.6vw;
 }
 
 .breadcrumbLink {
   color: #888;
   text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumbLink:hover {
-  color: #000000;
 }
 
 .breadcrumbSep,
@@ -772,25 +741,26 @@ body {
 }
 
 .contactsMain {
-  height: 380px;
+  min-height: 380px;
+  height: 42.2vh;
   flex: 1;
   display: flex;
-  gap: 250px;
+  gap: 17.4vw;
   min-height: 0;
-  justify-content: center;
+  align-items: center;
 }
 
 .contactsInfo {
-  height: 380px;
+  height: 42.2vh;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.7vh;
   flex-shrink: 0;
   justify-content: center;
 }
 
 .contactsTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
@@ -798,18 +768,18 @@ body {
 .contactsBlock {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.4vh;
 }
 
 .contactsBlockTitle {
-  font-size: 28px;
+  font-size: 1.9vw;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 0.9vh;
 }
 
 .contactsBlockText {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #000000;
   line-height: 1.2;
@@ -817,128 +787,123 @@ body {
 
 .contactsMap {
   flex: 1;
-  width: 730px;
-  height: 380px;
-  border-radius: 24px;
+  width: 50.7vw;
+  height: 42.2vh;
+  border-radius: 1.7vw;
   overflow: hidden;
 }
 
 .contactsMap iframe {
-  width: 730px;
-  height: 380px;
+  width: 50.7vw;
+  height: 42.2vh;
   border: none;
   display: block;
-  border-radius: 24px;
+  border-radius: 1.7vw;
 }
 
 .formPopup {
   position: fixed;
-  bottom: 40px;
+  bottom: 4.4vh;
   left: 50%;
-  transform: translateX(-50%) translateY(16px);
+  transform: translateX(-50%) translateY(1.8vh);
   background-color: #000000;
   color: #fff;
-  padding: 16px 32px;
-  border-radius: 12px;
-  font-size: 18px;
+  padding: 1.8vh 2.2vw;
+  border-radius: 0.8vw;
+  font-size: 1.3vw;
   font-weight: 300;
   opacity: 0;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
   z-index: 9999;
   pointer-events: none;
   white-space: nowrap;
 }
 
-.formPopup--visible {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
 .aboutContent {
   height: auto;
-  padding: 96px 90px 96px;
+  min-height: 700px;
+  padding: 10.7vh 6.3vw;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4.4vh;
 }
 
 .aboutMain {
   flex: 1;
   display: flex;
-  gap: 96px;
+  align-items: center;
+  gap: 6.7vw;
   min-height: 0;
 }
 
 .aboutInfo {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 480px;
+  gap: 2.7vh;
+  width: 33.3vw;
   flex-shrink: 0;
   justify-content: center;
 }
 
 .aboutBreadcrumb {
-  max-width: 150px;
+  max-width: 10.4vw;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #888;
-  gap: 8px;
-  margin-bottom: 84px;
+  gap: 0.6vw;
+  margin-bottom: 9.3vh;
 }
 
 .aboutTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
 
 .aboutLead {
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 500;
   line-height: 1.2;
   color: #000000;
 }
 
 .aboutText {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   line-height: 1.2;
   color: #000000;
 }
 
 .aboutImage {
-  width: 730px;
-  height: 600px;
+  width: 50.7vw;
+  height: 66.7vh;
   flex: 1;
-  border-radius: 24px;
+  border-radius: 1.7vw;
   object-fit: cover;
   min-width: 0;
 }
 
 .ourValues {
-  height: 600px;
+  height: 66.7vh;
+  min-height: 600px;
   background-color: #fff1e6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 72px;
+  gap: 8vh;
 }
 
 .ourValuesTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
 
 .ourValuesGrid {
   display: flex;
-  gap: 64px;
+  gap: 4.4vw;
   justify-content: center;
 }
 
@@ -946,67 +911,68 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;
+  max-width: 17.4vw;
   text-align: center;
 }
 
 .ourValueIcon {
-  width: 100px;
-  height: 100px;
+  width: 6.9vw;
+  height: 11.1vh;
   object-fit: contain;
-  margin-bottom: 16px;
+  margin-bottom: 1.8vh;
 }
 
 .ourValueName {
-  font-size: 28px;
+  font-size: 1.9vw;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 0.9vh;
 }
 
 .ourValueDesc {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #000000;
   line-height: 1.2;
 }
 
 .stories {
-  padding: 96px 90px;
+  min-height: 700px;
+  padding: 10.7vh 6.3vw;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  justify-content: center;
+  gap: 7.1vh;
 }
 
 .storiesTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
 
 .storiesGrid {
   display: flex;
-  gap: 24px;
+  gap: 1.7vw;
   width: 100%;
 }
 
 .storyCard {
   flex: 1;
-  height: 500px;
-  border-radius: 24px;
+  border-radius: 1.7vw;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.9vh 2.8vw rgba(0, 0, 0, 0.08);
 }
 
 .storyCardImage {
   position: absolute;
   inset: 0;
   background-color: #d9d9d9;
+  overflow: hidden;
   z-index: 2;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .storyCardPhoto {
@@ -1018,50 +984,47 @@ body {
 }
 
 .storyCardContent {
-  position: absolute;
-  inset: 0;
+  position: relative;
   background-color: #fff;
-  padding: 32px;
+  padding: 3.6vh 2.2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 0.9vh;
   z-index: 1;
 }
 
-.storyCard:hover .storyCardImage {
-  transform: translateY(-100%);
-}
-
 .storyCardName {
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 600;
   color: #000000;
 }
 
 .storyCardText {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #000000;
   line-height: 1.2;
 }
 
 .newsContent {
-  padding: 60px 90px 80px;
+  min-height: 1300px;
+  padding: 6.7vh 6.3vw 8.9vh;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  justify-content: center;
+  gap: 5.3vh;
 }
 
 .newsTitle {
-  font-size: 48px;
+  font-size: 3.3vw;
   font-weight: 600;
   color: #000000;
 }
 
 .newsFeatured {
   display: flex;
-  gap: 48px;
+  gap: 3.3vw;
   align-items: stretch;
 }
 
@@ -1070,53 +1033,48 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 32px;
-  padding: 24px 24px;
-  border-radius: 24px;
+  gap: 2.2vw;
+  padding: 2.7vh 1.7vw;
+  border-radius: 1.7vw;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
 .newsFeaturedMainImage {
-  width: 390px;
-  height: 400px;
-  border-radius: 16px;
+  width: 27.1vw;
+  height: 44.4vh;
+  border-radius: 1.1vw;
   background-color: #d9d9d9;
   flex-shrink: 0;
-}
-
-.newsFeaturedMain:hover {
-  transform: translateY(-4px);
 }
 
 .newsFeaturedMainText {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.7vh;
 }
 
 .newsFeaturedTitle {
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 400;
   color: #000000;
   line-height: 1.2;
-  max-width: 374px;
+  max-width: 26vw;
 }
 
 .newsFeaturedSubtitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 300;
   color: #888;
   line-height: 1.2;
-  max-width: 374px;
+  max-width: 26vw;
 }
 
 .newsFeaturedList {
-  width: 350px;
+  width: 24.3vw;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1127,28 +1085,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 20px 0;
+  gap: 1.1vw;
+  padding: 2.2vh 0;
   border-top: 1px solid #e0e0e0;
   cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.newsFeaturedItem:hover {
-  transform: translateY(-4px);
 }
 
 .newsFeaturedItemTitle {
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 400;
   color: #000000;
   line-height: 1.2;
 }
 
 .newsFeaturedItemThumb {
-  width: 110px;
-  height: 110px;
-  border-radius: 12px;
+  width: 7.6vw;
+  height: 12.2vh;
+  border-radius: 0.8vw;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
@@ -1156,23 +1109,20 @@ body {
 .newsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 1.1vw;
 }
 
 .newsCard {
   background-color: #d9d9d9;
-  border-radius: 16px;
-  height: 320px;
-  padding: 20px;
+  border-radius: 1.1vw;
+  height: 35.6vh;
+  padding: 2.2vh 1.4vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
 }
 
 .newsCard::before {
@@ -1187,14 +1137,9 @@ body {
   pointer-events: none;
 }
 
-.newsCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-}
-
 .newsCardTitle {
-  max-width: 310px;
-  font-size: 18px;
+  max-width: 21.5vw;
+  font-size: 1.3vw;
   font-weight: 400;
   color: #ffffff;
   line-height: 1.2;
@@ -1205,28 +1150,24 @@ body {
 .newsLoadMore {
   display: flex;
   justify-content: center;
-  padding: 8px 0;
+  padding: 0.9vh 0;
 }
 
 .newsLoadMoreBtn {
   background: none;
   border: none;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.3vw;
   font-weight: 500;
   color: #888;
   cursor: pointer;
   text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: background-color 0.2s;
-}
-
-.newsLoadMoreBtn:hover {
-  color: #000000;
+  text-underline-offset: 0.3vw;
 }
 
 .shopContent {
-  padding: 60px 90px 0;
+  min-height: 600px;
+  padding: 6.7vh 6.3vw;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1272,7 +1213,6 @@ body {
   display: flex;
   align-items: center;
   opacity: 1;
-  transition: opacity 0.2s;
 }
 
 .shopArrow:disabled {
@@ -1316,9 +1256,6 @@ body {
   flex-direction: column;
   gap: 16px;
   transform-origin: top center;
-  transition:
-    transform 0.65s cubic-bezier(0.34, 1.15, 0.64, 1),
-    opacity 0.4s ease;
   pointer-events: none;
   user-select: none;
 }
@@ -1335,6 +1272,14 @@ body {
   background: #c0c0c0;
   border-radius: 16px;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.shopCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .shopCardInfo {
@@ -1380,11 +1325,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.shopCardBuyBtn:hover {
-  background: #f78ecf;
 }
 
 .shopCardCartBtn {
@@ -1398,11 +1338,6 @@ body {
   font-weight: 300;
   color: #1a1a1a;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.shopCardCartBtn:hover {
-  background: rgba(0, 0, 0, 0.05);
 }
 
 .shopCard:not(.shopCard--active) .shopCardImage,
@@ -1432,6 +1367,7 @@ body {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .cartItems {
@@ -1459,6 +1395,14 @@ body {
   border-radius: 16px;
   background: #d9d9d9;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.cartItemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cartItemInfo {
@@ -1501,12 +1445,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.15s;
   flex-shrink: 0;
-}
-
-.cartQtyBtn:hover {
-  background: #f5f5f5;
 }
 
 .cartQtyValue {
@@ -1534,12 +1473,7 @@ body {
   padding: 4px;
   display: flex;
   align-items: center;
-  transition: color 0.2s;
   flex-shrink: 0;
-}
-
-.cartRemoveBtn:hover {
-  color: #1a1a1a;
 }
 
 .cartSummary {
@@ -1599,11 +1533,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.cartCheckoutBtn:hover {
-  background: #f78ecf;
 }
 
 .cartContinueLink {
@@ -1614,11 +1543,6 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: #c0c0c0;
-  transition: color 0.2s;
-}
-
-.cartContinueLink:hover {
-  color: #1a1a1a;
 }
 
 .cartEmpty {
@@ -1644,9 +1568,4 @@ body {
   font-weight: 300;
   padding: 16px 40px;
   border-radius: 36px;
-  transition: background-color 0.2s;
-}
-
-.cartEmptyBtn:hover {
-  background: #f78ecf;
 }

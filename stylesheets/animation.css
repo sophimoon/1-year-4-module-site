@@ -1,0 +1,204 @@
+/* Header */
+.headerLink {
+  transition: color 0.2s;
+}
+
+.headerLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Hero */
+.heroButton {
+  transition: background-color 0.2s;
+}
+
+.heroButton:hover {
+  background-color: #f78ecf;
+}
+
+/* Carousel */
+.carouselTrack {
+  transition: transform 0.4s ease;
+}
+
+/* FAQ */
+.faqChevron {
+  transition: transform 0.3s ease;
+}
+
+.faqItem.open .faqChevron {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  transition:
+    max-height 0.35s ease,
+    padding 0.35s ease;
+}
+
+/* Application form */
+.appFormInput {
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.appFormButton {
+  transition: background-color 0.2s;
+}
+
+.appFormButton:hover {
+  background-color: #f78ecf;
+}
+
+/* Form popup */
+.formPopup {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.formPopup--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Footer */
+.footerNavLink {
+  transition: color 0.2s;
+}
+
+.footerNavLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Breadcrumb */
+.breadcrumbLink {
+  transition: color 0.2s;
+}
+
+.breadcrumbLink:hover {
+  color: #000000;
+}
+
+/* 404 */
+.notFoundButton {
+  transition: background-color 0.2s;
+}
+
+.notFoundButton:hover {
+  background-color: #f78ecf;
+}
+
+/* Stories */
+.storyCardImage {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.storyCard:hover .storyCardImage {
+  transform: translateY(-100%);
+}
+
+/* News */
+.newsFeaturedMain {
+  transition: transform 0.2s ease;
+}
+
+.newsFeaturedMain:hover {
+  transform: translateY(-0.4vh);
+}
+
+.newsFeaturedItem {
+  transition: transform 0.2s ease;
+}
+
+.newsFeaturedItem:hover {
+  transform: translateY(-0.4vh);
+}
+
+.newsCard {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.newsCard:hover {
+  transform: translateY(-0.7vh);
+  box-shadow: 0 1.8vh 2.8vw rgba(0, 0, 0, 0.15);
+}
+
+.newsLoadMoreBtn {
+  transition: background-color 0.2s;
+}
+
+.newsLoadMoreBtn:hover {
+  color: #000000;
+}
+
+/* Shop */
+.shopArrow {
+  transition: opacity 0.2s;
+}
+
+.shopCard {
+  transition:
+    transform 0.65s cubic-bezier(0.34, 1.15, 0.64, 1),
+    opacity 0.4s ease;
+}
+
+.shopCardBuyBtn {
+  transition: background-color 0.2s;
+}
+
+.shopCardBuyBtn:hover {
+  background: #f78ecf;
+}
+
+.shopCardCartBtn {
+  transition: background-color 0.2s;
+}
+
+.shopCardCartBtn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Cart */
+.cartQtyBtn {
+  transition: background-color 0.15s;
+}
+
+.cartQtyBtn:hover {
+  background: #f5f5f5;
+}
+
+.cartRemoveBtn {
+  transition: color 0.2s;
+}
+
+.cartRemoveBtn:hover {
+  color: #1a1a1a;
+}
+
+.cartCheckoutBtn {
+  transition: background-color 0.2s;
+}
+
+.cartCheckoutBtn:hover {
+  background: #f78ecf;
+}
+
+.cartContinueLink {
+  transition: color 0.2s;
+}
+
+.cartContinueLink:hover {
+  color: #1a1a1a;
+}
+
+.cartEmptyBtn {
+  transition: background-color 0.2s;
+}
+
+.cartEmptyBtn:hover {
+  background: #f78ecf;
+}
